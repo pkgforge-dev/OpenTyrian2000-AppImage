@@ -15,6 +15,7 @@ export DEPLOY_OPENGL=1
 # Deploy dependencies
 quick-sharun /usr/bin/opentyrian2000
 mv ./AppDir/share/opentyrian2000/* ./AppDir/shared/bin
+echo 'SHARUN_WORKING_DIR=${SHARUN_DIR}/shared/bin' >> ./AppDir/.env
 
 # Additional changes can be done in between here
 
