@@ -14,7 +14,7 @@ export DEPLOY_OPENGL=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/opentyrian2000
-cp /usr/share/opentyrian2000/* ./AppDir/bin
+mv ./AppDir/share/opentyrian2000/* ./AppDir/shared/bin
 
 # Additional changes can be done in between here
 
