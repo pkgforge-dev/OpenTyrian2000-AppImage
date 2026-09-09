@@ -12,10 +12,6 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano libdecor-mini
 
-# Comment this out if you need an AUR package
-#make-aur-package opentyrian2000
-
-# If the application needs to be manually built that has to be done down here
 echo "Building OpenTyrian2000..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/KScl/opentyrian2000"
