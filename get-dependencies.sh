@@ -23,5 +23,7 @@ VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
 git clone --depth 1 "$REPO" ./opentyrian2000
 echo "$VERSION" > ~/version
 
+mkdir -p /usr/share/opentyrian2000
 wget https://camanis.net/tyrian/tyrian2000.zip
+cd ./opentyrian2000
 make prefix=/usr gamesdir=/usr/share all -j$(nproc)
